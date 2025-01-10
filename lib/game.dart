@@ -297,6 +297,26 @@ class _GamePageState extends State<GamePage> {
               ),
             ),
           ),
+          Positioned(
+            top: 20,
+            left: 20,
+            child: Container(
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color:
+                        const Color.fromARGB(255, 46, 2, 241).withOpacity(0.5),
+                    blurRadius: 50.0,
+                    offset: Offset(0, 0), // Shadow position
+                  ),
+                ],
+              ),
+              child: Image.asset(
+                'assets/logo.png',
+                width: 150, // Adjust size as needed
+              ),
+            ),
+          ),
           RawKeyboardListener(
             focusNode: FocusNode()..requestFocus(),
             autofocus: true,
