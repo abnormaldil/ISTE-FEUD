@@ -257,18 +257,29 @@ class _GamePageState extends State<GamePage> {
 
       // Check for keys 1–5
       if (logicalKey.keyId >= LogicalKeyboardKey.digit1.keyId &&
-          logicalKey.keyId <= LogicalKeyboardKey.digit6.keyId) {
+          logicalKey.keyId <= LogicalKeyboardKey.digit5.keyId) {
         final index = logicalKey.keyId - LogicalKeyboardKey.digit1.keyId;
         if (index < visibilityFlags.length) {
           showAnswer(index);
         }
       }
 
-      // Check for key 0
+      // Check for key 0 to show wrong alert
       if (logicalKey == LogicalKeyboardKey.digit0) {
         showWrongAlert();
       }
+
+      // Check for "r" key to reveal all answers
+      if (logicalKey == LogicalKeyboardKey.keyR) {
+        revealAllAnswers();
+      }
     }
+  }
+
+  void revealAllAnswers() {
+    setState(() {
+      visibilityFlags = List.generate(visibilityFlags.length, (index) => true);
+    });
   }
 
   @override
