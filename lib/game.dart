@@ -81,6 +81,18 @@ class _GamePageState extends State<GamePage> {
       ]
     },
     {
+      "question":
+          "What would you do when your laptop is infected with a virus?",
+      "options": [
+        {"answer": "Install antivirus software", "points": 40},
+        {"answer": "Reset the laptop", "points": 30},
+        {"answer": "Browse for solutions", "points": 20},
+        {"answer": "Go to a service center", "points": 10},
+        {"answer": "Quarantine the laptop", "points": 5},
+        {"answer": "Sanitize the laptop", "points": 5}
+      ]
+    },
+    {
       "question": "What is the most annoying thing about online meetings?",
       "options": [
         {"answer": "Someone forgetting to unmute", "points": 40},
@@ -100,6 +112,18 @@ class _GamePageState extends State<GamePage> {
         {"answer": "ABCD1234", "points": 10},
         {"answer": "qwerty", "points": 5},
         {"answer": "Their date of birth", "points": 5}
+      ]
+    },
+    {
+      "question":
+          "What do you do when you see a python when you enter a computer lab?",
+      "options": [
+        {"answer": "Uninstall Python from the computer", "points": 40},
+        {"answer": "Kill python", "points": 30},
+        {"answer": "Exit the computer lab", "points": 20},
+        {"answer": "Call for help/Vava Suresh", "points": 10},
+        {"answer": "Pet/feed the snake", "points": 5},
+        {"answer": "Fry and eat", "points": 5}
       ]
     },
     {
@@ -125,29 +149,6 @@ class _GamePageState extends State<GamePage> {
       ]
     },
     {
-      "question":
-          "Name something people often forget to back up on their devices.",
-      "options": [
-        {"answer": "Photos", "points": 40},
-        {"answer": "Chats", "points": 30},
-        {"answer": "Contacts", "points": 20},
-        {"answer": "Documents", "points": 10},
-        {"answer": "Passwords", "points": 5},
-        {"answer": "Music", "points": 5}
-      ]
-    },
-    {
-      "question": "What do people usually do while their computer updates?",
-      "options": [
-        {"answer": "Check their phone", "points": 40},
-        {"answer": "Eat", "points": 30},
-        {"answer": "Complain about how long it’s taking", "points": 20},
-        {"answer": "Walk away", "points": 10},
-        {"answer": "Watch TV", "points": 5},
-        {"answer": "Sleep", "points": 5}
-      ]
-    },
-    {
       "question": "What is a tech gadget that people buy but rarely use?",
       "options": [
         {"answer": "Phone stand", "points": 40},
@@ -159,26 +160,14 @@ class _GamePageState extends State<GamePage> {
       ]
     },
     {
-      "question": "What are the qualities of an ISTE member?",
+      "question": "What do people usually do while their computer updates?",
       "options": [
-        {"answer": "Leadership", "points": 40},
-        {"answer": "Honesty", "points": 30},
-        {"answer": "Sincerity", "points": 20},
-        {"answer": "Responsibility", "points": 10},
-        {"answer": "Hardworking", "points": 5},
-        {"answer": "Unique ideas", "points": 5}
-      ]
-    },
-    {
-      "question":
-          "What do you do when you see a python when you enter a computer lab?",
-      "options": [
-        {"answer": "Uninstall Python from the computer", "points": 40},
-        {"answer": "Kill python", "points": 30},
-        {"answer": "Exit the computer lab", "points": 20},
-        {"answer": "Call for help/Vava Suresh", "points": 10},
-        {"answer": "Pet/feed the snake", "points": 5},
-        {"answer": "Run away", "points": 5}
+        {"answer": "Check their phone", "points": 40},
+        {"answer": "Eat", "points": 30},
+        {"answer": "Complain about how long it’s taking", "points": 20},
+        {"answer": "Walk away", "points": 10},
+        {"answer": "Watch TV", "points": 5},
+        {"answer": "Sleep", "points": 5}
       ]
     },
     {
@@ -194,16 +183,27 @@ class _GamePageState extends State<GamePage> {
     },
     {
       "question":
-          "What would you do when your laptop is infected with a virus?",
+          "Name something people often forget to back up on their devices.",
       "options": [
-        {"answer": "Install antivirus software", "points": 40},
-        {"answer": "Reset the laptop", "points": 30},
-        {"answer": "Browse for solutions", "points": 20},
-        {"answer": "Go to a service center", "points": 10},
-        {"answer": "Quarantine the laptop", "points": 5},
-        {"answer": "Sanitize the laptop", "points": 5}
+        {"answer": "Photos", "points": 40},
+        {"answer": "Chats", "points": 30},
+        {"answer": "Contacts", "points": 20},
+        {"answer": "Documents", "points": 10},
+        {"answer": "Passwords", "points": 5},
+        {"answer": "Music", "points": 5}
       ]
-    }
+    },
+    {
+      "question": "What are the qualities of an ISTE member?",
+      "options": [
+        {"answer": "Leadership", "points": 40},
+        {"answer": "Honesty", "points": 30},
+        {"answer": "Sincerity", "points": 20},
+        {"answer": "Responsibility", "points": 10},
+        {"answer": "Hardworking", "points": 5},
+        {"answer": "Unique ideas", "points": 5}
+      ]
+    },
   ];
 
   List<bool> visibilityFlags = [];
