@@ -257,7 +257,7 @@ class _GamePageState extends State<GamePage> {
 
       // Check for keys 1–5
       if (logicalKey.keyId >= LogicalKeyboardKey.digit1.keyId &&
-          logicalKey.keyId <= LogicalKeyboardKey.digit5.keyId) {
+          logicalKey.keyId <= LogicalKeyboardKey.digit6.keyId) {
         final index = logicalKey.keyId - LogicalKeyboardKey.digit1.keyId;
         if (index < visibilityFlags.length) {
           showAnswer(index);
