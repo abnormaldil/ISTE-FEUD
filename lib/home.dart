@@ -18,10 +18,10 @@ class HomePage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Logo added here
+               
                 Image.asset(
                   'assets/logo.png',
-                  width: 600, // Adjust width as needed
+                  width: 600, 
                 ),
 
                 // Text(

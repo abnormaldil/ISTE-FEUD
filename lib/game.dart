@@ -19,12 +19,12 @@ class _FadeOutImageAlertState extends State<FadeOutImageAlert> {
   @override
   void initState() {
     super.initState();
-    // Start fading out after a delay of 3 seconds
+   
     Future.delayed(Duration(seconds: 3), () {
       setState(() {
         opacity = 0.0;
       });
-      // Close the dialog after the fade-out animation completes
+    
       Future.delayed(Duration(milliseconds: 500), () {
         Navigator.of(context).pop();
       });
@@ -233,15 +233,12 @@ class _GamePageState extends State<GamePage> {
     setState(() {
       visibilityFlags[index] = true;
     });
-    // Play right.mp3 sound
     await audioPlayer.play(AssetSource('right.mp3'));
   }
 
   void showWrongAlert() async {
-    // Play wrong.mp3 sound
     await audioPlayer.play(AssetSource('wrong.mp3'));
 
-    // Show the wrong alert dialog
     showDialog(
       context: context,
       barrierDismissible: false,
@@ -255,7 +252,6 @@ class _GamePageState extends State<GamePage> {
     if (event is RawKeyDownEvent) {
       final logicalKey = event.logicalKey;
 
-      // Check for keys 1–5
       if (logicalKey.keyId >= LogicalKeyboardKey.digit1.keyId &&
           logicalKey.keyId <= LogicalKeyboardKey.digit6.keyId) {
         final index = logicalKey.keyId - LogicalKeyboardKey.digit1.keyId;
@@ -264,12 +260,10 @@ class _GamePageState extends State<GamePage> {
         }
       }
 
-      // Check for key 0 to show wrong alert
       if (logicalKey == LogicalKeyboardKey.digit0) {
         showWrongAlert();
       }
 
-      // Check for "r" key to reveal all answers
       if (logicalKey == LogicalKeyboardKey.keyR) {
         revealAllAnswers();
       }
@@ -307,13 +301,13 @@ class _GamePageState extends State<GamePage> {
                     color:
                         const Color.fromARGB(255, 46, 2, 241).withOpacity(0.5),
                     blurRadius: 50.0,
-                    offset: Offset(0, 0), // Shadow position
+                    offset: Offset(0, 0),
                   ),
                 ],
               ),
               child: Image.asset(
                 'assets/logo.png',
-                width: 150, // Adjust size as needed
+                width: 150, 
               ),
             ),
           ),
@@ -456,12 +450,12 @@ class _GamePageState extends State<GamePage> {
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           backgroundColor:
-                              Colors.blue, // Set button background to blue
+                              Colors.blue, 
                           padding: EdgeInsets.symmetric(
                               horizontal: 20, vertical: 10),
                           shape: RoundedRectangleBorder(
                             borderRadius:
-                                BorderRadius.circular(10), // Rounded corners
+                                BorderRadius.circular(10),
                           ),
                         ),
                         onPressed: currentQuestionIndex > 0
@@ -475,9 +469,9 @@ class _GamePageState extends State<GamePage> {
                         child: Text(
                           'Previous',
                           style: TextStyle(
-                            color: Colors.white, // Set text color to white
-                            fontFamily: 'Gilroy', // Apply Gilroy font
-                            fontWeight: FontWeight.bold, // Set text to bold
+                            color: Colors.white, 
+                            fontFamily: 'Gilroy', 
+                            fontWeight: FontWeight.bold, 
                             fontSize: 18,
                           ),
                         ),
@@ -485,12 +479,12 @@ class _GamePageState extends State<GamePage> {
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           backgroundColor:
-                              Colors.blue, // Set button background to blue
+                              Colors.blue, 
                           padding: EdgeInsets.symmetric(
                               horizontal: 20, vertical: 10),
                           shape: RoundedRectangleBorder(
                             borderRadius:
-                                BorderRadius.circular(10), // Rounded corners
+                                BorderRadius.circular(10), 
                           ),
                         ),
                         onPressed: currentQuestionIndex < questions.length - 1
@@ -504,9 +498,9 @@ class _GamePageState extends State<GamePage> {
                         child: Text(
                           'Next',
                           style: TextStyle(
-                            color: Colors.white, // Set text color to white
-                            fontFamily: 'Gilroy', // Apply Gilroy font
-                            fontWeight: FontWeight.bold, // Set text to bold
+                            color: Colors.white, 
+                            fontFamily: 'Gilroy', 
+                            fontWeight: FontWeight.bold, 
                             fontSize: 18,
                           ),
                         ),
