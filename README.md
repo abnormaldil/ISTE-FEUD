@@ -1,16 +1,54 @@
-# isteconnect
+# **ISTE Connect**  
+### *Ice-Breaking Session Game*  
 
-Connect Ice breaking session game
+ISTE-FEUD is a fun Flutter web app designed for ice-breaking sessions, inspired by the famous TV game show *Family Feud* hosted by Steve Harvey.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## **Features**  
 
-A few resources to get you started if this is your first Flutter project:
+- **Interactive Gameplay**:  
+  - Press numbers **1 to 5** on the keyboard to reveal corresponding answers.  
+  - Press **0** to display a wrong answer.  
+  - Press **R** to reveal *all answers at once*.  
+  - Click **Next** to move to the next question.
+  - Better working in PC
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Preloaded Questions**:  
+  - A total of **14 preloaded questions** are available in the game.  
+  - To add or modify questions, edit the `game.dart` file located in the `lib` folder.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## **How to Get Started**  
+
+1. Clone the repository.  
+2. Open the project in your preferred Flutter development environment.  
+3. Run the app using `flutter run` in your terminal.  
+
+---
+
+## **Customization**  
+
+To add more questions:  
+
+1. Open `lib/game.dart`.  
+2. Follow the format of existing questions and append new ones as needed.  
+3. Save your changes and restart the app.
+
+---
+
+## **Controls Summary**  
+
+| **Key**         | **Action**                                |  
+|-----------------|-------------------------------------------|  
+| `1 - 5`         | Reveal corresponding answers              |  
+| `0`             | Display a wrong answer                    |  
+| `R`             | Reveal all answers at once                |  
+| `Next` (Button) | Proceed to the next question              |  
+
+---
+
+## **Contribution**  
+
+Feel free to fork the repository, raise issues, or submit pull requests if you'd like to contribute to the project.  
