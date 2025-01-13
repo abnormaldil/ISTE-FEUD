@@ -52,3 +52,13 @@ To add more questions:
 ## **Contribution**  
 
 Feel free to fork the repository, raise issues, or submit pull requests if you'd like to contribute to the project.  
+
+---
+
+## **Screenshots**  
+
+![Screenshot 1](ss.jpg)  
+*Figure 1: Sample gameplay screen*
+
+![Screenshot 2](ss2.jpg)  
+*Figure 2: Revealing answers during gameplay*
