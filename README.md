@@ -57,8 +57,8 @@ Feel free to fork the repository, raise issues, or submit pull requests if you'd
 
 ## **Screenshots**  
 
-![Screenshot 1](Screenshot (80).png)  
+![Screenshot 1](Screenshot(80).png)  
 *Figure 1: Sample gameplay screen*
 
-![Screenshot 2](Screenshot (65).png)  
+![Screenshot 2](Screenshot(65).png)  
 *Figure 2: Revealing answers during gameplay*
