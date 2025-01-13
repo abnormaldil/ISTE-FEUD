@@ -57,8 +57,16 @@ Feel free to fork the repository, raise issues, or submit pull requests if you'd
 
 ## **Screenshots**  
 
-![Screenshot 1](Screenshot(80).png)  
-*Figure 1: Sample gameplay screen*
+<p align="center">
+  <img src="Screenshot(82).png" alt="Screenshot 1" width="45%" />
+  <img src="Screenshot(80).png" alt="Screenshot 2" width="45%" />
+</p>
 
-![Screenshot 2](Screenshot(65).png)  
-*Figure 2: Revealing answers during gameplay*
+<p align="center">
+  <img src="Screenshot(65).png" alt="Screenshot 3" width="60%" />
+</p>
+
+*Figure 1: Home screen (left), Figure 2: Sample gameplay screen (right), Figure 3: Revealing answers during gameplay (below)*
+
+
+
